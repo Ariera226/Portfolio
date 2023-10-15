@@ -1,37 +1,26 @@
 [
   {
     "id": 1,
-    "title": "React Front To Back",
-    "description": "Learn Modern React, Including Hooks, Context API, Full Stack MERN & Redux By Building Real Life Projects.",
-    "link": "https://www.traversymedia.com/Modern-React-Front-To-Back-Course",
-    "level": "Beginner"
+    "title": "깃허브",
+    "description": "프로그래밍 여정이 기록될 곳입니다.",
+    "link": "https://github.com/Ariera226"
   },
   {
     "id": 2,
-    "title": "Node.js API Masterclass",
-    "description": "Build an extensive RESTful API using Node.js, Express, and MongoDB",
-    "link": "https://www.traversymedia.com/node-js-api-masterclass",
-    "level": "Intermediate"
+    "title": "레딧",
+    "description": "이번 프로젝트에 대한 소개가 포함된 프로그래밍 관련 게시판 이용 및 개인적 사용을 위한 계정입니다.",
+    "link": "https://www.reddit.com/user/Ariera226"
   },
   {
     "id": 3,
-    "title": "Modern JavaScript From The Beginning",
-    "description": "37 hour course that teaches you all of the fundamentals of modern JavaScript.",
-    "link": "https://www.traversymedia.com/modern-javascript-2-0",
-    "level": "All Levels"
+    "title": "유튜브",
+    "description": "과제 관련된 영상들을 게시하는 채널입니다, 추후의 용도는 아직 미정입니다.",
+    "link": "https://www.youtube.com/@surgerbeeche699"
   },
   {
     "id": 4,
-    "title": "Next.js Dev To Deployment",
-    "description": "Learn Next.js by building a music event website and a web dev blog as a static website",
-    "link": "https://www.traversymedia.com/next-js-dev-to-deployment",
-    "level": "Intermediate"
-  },
-  {
-    "id": 5,
-    "title": "50 Projects in 50 Days",
-    "description": "Sharpen your skills by building 50 quick, unique & fun mini projects.",
-    "link": "https://www.traversymedia.com/50-Projects-In-50-Days",
-    "level": "Beginner"
+    "title": "인스타그램",
+    "description": "개인적인 포스트가 올라오는 공간입니다.",
+    "link": "https://www.instagram.com/hefty_hartfield_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
   }
 ]

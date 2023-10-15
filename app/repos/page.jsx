@@ -1,20 +1,17 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 
 const username = 'bradtraversy';
 async function fetchRepos() {
   const url = `https://api.github.com/users/${username}/repos`;
 
-  const response = await fetch(url, { cache: 'no-store' });
+  const response = await fetch();
 
   // 3. ISR : Incremental Static Regeneration
   // const response = await fetch(
   //   `https://api.github.com/users/${username}/repos`,
   //   { next: { revalidate: 60 } }
   // )
-
-  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   const repos = await response.json();
   return repos;
@@ -25,26 +22,14 @@ const ReposPage = async () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-4">
-        Github Repositories of {username}
-      </h2>
+      <h2 className="text-2xl font-bold mb-4">현재까지의 팀 프로젝트 계획</h2>
       <ul>
         {repos.map((repo) => (
           <li key={repo.id} className="bg-gray-100 m-4 p-4 rounded-md">
-            <Link href={`/repos/${repo.name}`}>
+            <Link
+              href={`https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fosjr8whhobub1.png`}
+            >
               <h3 className="text-xl font-bold">{repo.name}</h3>
-              <p>{repo.description}</p>
-              <div className="flex justify-between items-center">
-                <span className="flex items-center gap-1">
-                  <FaStar /> {repo.stargazers_count}
-                </span>
-                <span className="flex items-center gap-1">
-                  <FaCodeBranch /> {repo.forks_count}
-                </span>
-                <span className="flex items-center gap-1">
-                  <FaEye /> {repo.stargazers_count}
-                </span>
-              </div>
             </Link>
           </li>
         ))}
