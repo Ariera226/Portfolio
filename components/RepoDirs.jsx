@@ -1,25 +1,23 @@
+import { github_user } from '@/const/const';
 import Link from 'next/link';
 import React from 'react';
 
+const username = github_user;
+
 async function fetchRepoContents(name) {
-  const username = 'bradtraversy';
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-
-  const response = await fetch(
-    `https://api.github.com/repos/${username}/${name}/contents`
-  );
+  const url = `https://api.github.com/repos/${username}/${name}/contents`;
+  const response = await fetch(url);
   const contents = await response.json();
-
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   return contents;
 }
 
 const RepoDirs = async ({ name }) => {
-  const username = 'bradtraversy';
   const contents = await fetchRepoContents(name);
-  const dirs = contents.filter((content) => content.type === 'dir');
-
+  // const dirs = contents.filter((content) => content.type === 'dir')
+  const dirs = contents;
   return (
-    <div className="mt-4 ">
+    <div className="mt-4">
       <h3 className="text-xl font-bold">Directories</h3>
       <ul>
         {dirs.map((dir) => (
@@ -33,4 +31,5 @@ const RepoDirs = async ({ name }) => {
     </div>
   );
 };
+
 export default RepoDirs;
