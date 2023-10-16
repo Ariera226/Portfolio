@@ -1,11 +1,7 @@
 import Link from 'next/link';
 
 async function fetchCourses() {
-  const response = await fetch(
-    'https://portfolio-git-main-ariera226.vercel.app/api/courses',
-    'portfolio-red-xi-53.vercel.app/api/courses',
-    'portfolio-6gr100rel-ariera226.vercel.app/api/courses'
-  );
+  const response = await fetch('portfolio-red-xi-53.vercel.app/api/courses');
   const courses = await response.json();
   return courses;
 }
