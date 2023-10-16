@@ -7,11 +7,11 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-gray-400 py-6 px-4">
+      <nav className="bg-gray-900 py-6 px-4">
         <div className="flex items-center justify-between container">
           <div className="flex items-center font-bold">
             <Link href="/">
-              <div className="text-lg text-white hover:text-black mr-4 bold">
+              <div className="text-lg text-white hover:text-red-700 mr-4 bold">
                 92213134 최중건 포트폴리오
               </div>
             </Link>
@@ -22,13 +22,13 @@ const Header = () => {
               <>
                 <Link
                   href="/sign-in"
-                  className="text-gray-200 hover:text-black mr-4"
+                  className="text-gray-200 hover:text-red-700 mr-4"
                 >
                   로그인
                 </Link>
                 <Link
                   href="/sign-up"
-                  className="text-gray-200 hover:text-black mr-4"
+                  className="text-gray-200 hover:text-red-700 mr-4"
                 >
                   회원가입
                 </Link>
@@ -37,13 +37,13 @@ const Header = () => {
               <>
                 <Link
                   href="/courses"
-                  className="text-gray-200 hover:text-black mr-4"
+                  className="text-gray-200 hover:text-red-700 mr-4"
                 >
                   소셜 계정들
                 </Link>
                 <Link
                   href="/profile"
-                  className="text-gray-200 hover:text-black mr-4"
+                  className="text-gray-200 hover:text-red-700 mr-4"
                 >
                   프로필
                 </Link>
