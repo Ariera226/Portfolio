@@ -7,8 +7,8 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-blue-400 py-4 px-8">
-        <div className="flex items-center justify-between container">
+      <nav className="bg-gray-400 py-4 px-8">
+        <div className="flex items-center justify-between container bold">
           <div className="flex items-center font-bold">
             <Link href="/">
               <div className="text-lg text-white hover:text-black mr-4">
