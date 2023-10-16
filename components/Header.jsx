@@ -7,11 +7,11 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-gray-400 py-4 px-8">
-        <div className="flex items-center justify-between container bold">
+      <nav className="bg-gray-400 py-4 px-4">
+        <div className="flex items-center justify-between container">
           <div className="flex items-center font-bold">
             <Link href="/">
-              <div className="text-lg text-white hover:text-black mr-4">
+              <div className="text-lg text-white hover:text-black mr-4 bold">
                 92213134 최중건 포트폴리오
               </div>
             </Link>
